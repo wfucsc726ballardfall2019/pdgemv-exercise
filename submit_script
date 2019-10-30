@@ -2,7 +2,7 @@
 #SBATCH --job-name=pdgemv
 #SBATCH --partition=medium
 #SBATCH --nodes=1
-#SBATCH --tasks-per-node=44
+#SBATCH --tasks-per-node=32
 #SBATCH --time=00:10:00
 #SBATCH --mem=64GB
 #SBATCH --account=classes
