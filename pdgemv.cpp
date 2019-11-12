@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     int nProcs, rank;
     MPI_Comm_size(MPI_COMM_WORLD, &nProcs);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    srand(rank*12345);
+    srand48(rank*12345);
 
     // Read dimensions and processor grid from command line arguments
     if(argc != 5) {
